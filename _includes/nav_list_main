@@ -34,14 +34,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">알고리즘(with C++) ({{category[1].size}})</a></li>
+                        <li><a href="/categories/algorithm" class="">Algorithm(with C++) ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Boj" %}
-                        <li><a href="/categories/boj" class="">백준 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/boj" class="">Boj ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -49,14 +49,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Unreal" %}
-                        <li><a href="/categories/unreal" class="">언리얼 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/unreal" class="">Unreal ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Unity" %}
-                        <li><a href="/categories/unity" class="">유니티 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/unity" class="">Unity ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>    
@@ -64,7 +64,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Network" %}
-                        <li><a href="/categories/network" class="">네트워크 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/network" class="">Network ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
