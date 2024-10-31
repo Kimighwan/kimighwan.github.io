@@ -1,9 +1,13 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
-search: false
----
+
 
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+@font-face {
+    font-family: 'Cafe24Dongdong';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Dongdong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
