@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Home"
+    url: https://kimighwan.github.io/
   - title: "Category"
     url: /categories/
   # - title: "About"
