@@ -51,7 +51,7 @@
 
 .pagination {
   @include clearfix();
-  float: inline-start;
+  float: left;
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
@@ -65,7 +65,7 @@
 
   li {
     display: block;
-    float: inline-start;
+    float: left;
     margin-inline-start: -1px;
 
     a {
@@ -116,20 +116,32 @@
     }
   }
 
-  /* next/previous buttons */
-  &--pager {
-    display: block;
-    padding: 1em 2em;
-    float: inline-start;
-    width: 50%;
-    font-family: $sans-serif;
-    font-size: $type-size-5;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: $muted-text-color;
-    border: 1px solid mix(#000, $border-color, 25%);
-    border-radius: $border-radius;
+  .pagination_prev_next {
+    @include clearfix();
+    float: left;
+    width: 100%;
+  
+    /* next/previous buttons */
+    &--pager {
+      margin-top: 0em;
+      padding-top: 0em;
+      display: block;
+      padding: 1em 2em;
+      //float: left;
+      width: 100%;
+      font-family: $sans-serif;
+      font-size: $type-size-5;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: $muted-text-color;
+      border: 1px solid mix(#fff, $border-color, 60%);
+      border-radius: $border-radius;
+  
+      .prev_next {
+        font-family: $cute;
+        color:#ffd861;
+      }
 
     &:hover {
       @include yiq-contrasted($muted-text-color);
