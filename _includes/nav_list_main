@@ -41,7 +41,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Boj" %}
-                        <li><a href="/categories/programmers" class="">백준 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/boj" class="">백준 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -49,14 +49,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Unreal" %}
-                        <li><a href="/categories/cpp" class="">Unreal ({{category[1].size}})</a></li>
+                        <li><a href="/categories/unreal" class="">언리얼 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Unity" %}
-                        <li><a href="/categories/stl" class="">Unity ({{category[1].size}})</a></li>
+                        <li><a href="/categories/unity" class="">유니티 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>    
