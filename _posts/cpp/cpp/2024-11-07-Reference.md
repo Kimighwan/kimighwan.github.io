@@ -198,12 +198,3 @@ int main() {
 개인 공부 기록용 블로그입니다.
 잘못된 곳은 댓글 혹은 메일을 지적해주시면 감사하겠습니다! :\)
 ```
-
-<script src="https://utteranc.es/client.js"
-        repo="Kimighwan/comments"
-        issue-term="pathname"
-        label="comments"
-        theme="photon-dark"
-        crossorigin="anonymous"
-        async>
-</script>
