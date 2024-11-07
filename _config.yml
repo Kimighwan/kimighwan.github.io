@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "하루  공부  (Today  I Learn)"
+title                    : "하루 공부 (Today I Learn)"
 title_separator          : "|"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Ikhwan"
-description              : "공부  &  기록"
+description              : "공부 & 기록"
 url                      : "https://kimighwan.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Kimighwan/comments" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -114,15 +114,15 @@ analytics:
 author:
   name             : "Ikhwan"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "안녕하세요  :)"
-  location         : "Busan,  South Korea"
+  bio              : "안녕하세요 :)"
+  location         : "Busan, South Korea"
   email            :
   links:
     - label: "Email"
-      icon: "fas  fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-envelope-square"
       url: "mailto:moonfgg@naver.com"
     - label: "GitHub"
-      icon: "fab  fa-fw fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/Kimighwan"
     #- label: "Instagram"
     #  icon: "fab fa-fw fa-instagram"
@@ -132,7 +132,7 @@ author:
 footer:
   links:
     - label: "GitHub"
-      icon: "fab  fa-fw fa-github"
+      icon: "fab fa-fw fa-github"
       url: "https://github.com/Kimighwan"
 
 
