@@ -4,8 +4,8 @@ title:  "C++ Reference(참조자)"
 categories:
   - Cpp
 
-toc: true
-toc_sticky: true
+toc: false
+toc_sticky: false
 
 date: 2024-11-07
 last_modified_at: 2024-11-07
