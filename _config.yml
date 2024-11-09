@@ -113,7 +113,7 @@ analytics:
 # Site Author
 author:
   name             : "Ikhwan"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/devil.jpg"
   bio              : "안녕하세요 :)"
   location         : "Busan, South Korea"
   email            :
