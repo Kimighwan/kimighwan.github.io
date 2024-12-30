@@ -8,15 +8,15 @@ toc: false
 toc_sticky: false
 
 date: 2024-12-26
-last_modified_at: 2024-12-26
+last_modified_at: 2024-12-30
 ---
 
 [모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
 {: .notice}
 
----
-
 <br/>
+
+---
 
 # 상속
 

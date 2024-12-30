@@ -14,6 +14,8 @@ last_modified_at: 2024-12-28
 [모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
 {: .notice}
 
+<br/>
+
 ---
 
 # random
@@ -276,7 +278,9 @@ int main() {
 ---
 
 [<random>](https://en.cppreference.com/w/cpp/header/random)
-[std::tm](https://en.cppreference.com/w/cpp/chrono/c/tm)
+[ctime](https://en.cppreference.com/w/cpp/header/ctime)
+
+<br/>
 
 ```
 개인 공부 기록용 블로그입니다.
