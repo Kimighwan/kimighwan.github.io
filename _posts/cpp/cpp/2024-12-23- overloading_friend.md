@@ -8,12 +8,16 @@ toc: false
 toc_sticky: false
 
 date: 2024-12-23
-last_modified_at: 2024-12-23
+last_modified_at: 2024-12-25
 ---
+
+[모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
+{: .notice}
 
 <br/>
 
 ---
+
 # 오버로딩
 * 기존 정의되어 있는 것을 사용자가 원하는 것으로 재정의하는 것을 오버로딩이라 한다.
 * 함수 이름은 같지만 매개변수가 다르면 다른 함수로 인식한다
@@ -256,11 +260,6 @@ int main()
  <br/>
 
 ---
-
-<br/>
-
-[모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
-{: .notice}
 
 <br/>
 

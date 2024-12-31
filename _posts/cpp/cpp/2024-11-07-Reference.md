@@ -8,10 +8,15 @@ toc: false
 toc_sticky: false
 
 date: 2024-11-07
-last_modified_at: 2024-11-07
+last_modified_at: 2024-12-25
 ---
 
+[모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
+{: .notice}
+
 <br/>
+
+---
 
 # Reference(참조자)
 
@@ -195,11 +200,6 @@ int main() {
 |상수 참조자 타입으로 받음 (const int& a = f())|가능|가능. 다만 마찬가지로 지역 변수의 레퍼런스를 리턴하지 않도록 주의|
 
 ---
-
-<br>
-
-[모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
-{: .notice}
 
 <br>
 

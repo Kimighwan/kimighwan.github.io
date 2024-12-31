@@ -8,10 +8,15 @@ toc: false
 toc_sticky: false
 
 date: 2024-12-22
-last_modified_at: 2024-12-22
+last_modified_at: 2024-12-25
 ---
 
+[모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
+{: .notice}
+
 <br/>
+
+---
 
 # 얕은 복사
 
@@ -42,11 +47,6 @@ T(const T& resource)  // 복사 생성자
 ```
 
 ---
-
-<br/>
-
-[모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
-{: .notice}
 
 <br/>
 
