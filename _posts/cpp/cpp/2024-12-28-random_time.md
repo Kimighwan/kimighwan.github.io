@@ -219,14 +219,10 @@ std::chrono::time_point<std::chrono::high_resolution_clock> end =  std::chrono::
  <br/>
  
 ## 현재 시간
+
 * 그런데 안타깝게 C++에는 현재시간을 간단하게 다룰 수 있는 클래스가 없어 c함수에 의존해야 한다.
 
 ```cpp
-#include <chrono>
-#include <ctime>
-#include <iomanip>
-#include <iostream>
-
 int main() {
   auto now = std::chrono::system_clock::now();
   std::time_t t = std::chrono::system_clock::to_time_t(now);
@@ -277,7 +273,8 @@ int main() {
 
 ---
 
-[<random>](https://en.cppreference.com/w/cpp/header/random)
+[random](https://en.cppreference.com/w/cpp/header/random)
+
 [ctime](https://en.cppreference.com/w/cpp/header/ctime)
 
 <br/>
