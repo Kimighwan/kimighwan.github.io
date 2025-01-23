@@ -7,8 +7,8 @@ categories:
 toc: false
 toc_sticky: false
 
-date: 2025-01-23
-last_modified_at: 2025-01-23
+date: 2025-01-24
+last_modified_at: 2025-01-24
 ---
 
 [모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
