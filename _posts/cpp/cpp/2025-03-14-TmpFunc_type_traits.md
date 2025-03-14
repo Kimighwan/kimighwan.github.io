@@ -7,8 +7,8 @@ categories:
 toc: false
 toc_sticky: false
 
-date: 2025-03-13
-last_modified_at: 2025-03-13
+date: 2025-03-14
+last_modified_at: 2025-03-14
 ---
 
 [모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
@@ -297,12 +297,38 @@ using void_t = void;
 
 * 가변길이 템플릿을 이용해서 ```void_t```에 템플릿 인자로 임의의 개수의 타입들을 전달할 수 있고, 어찌 되었든 ```void_t```는 결국 ```void```와 동일하다.
 * 만약 올바르지 않은 인자가 있다면 ```void_t```를 사용한 템플릿 함수의 경우 오버로딩 후보군에서 제외가 된다.
+* 따라서 아래와 같이 변경이 가능하다
 
+```cpp
+template <typename Cont, typename = decltype(std::declval<Cont>().begin()),
+          typename = decltype(std::declval<Cont>().end())>
+```
 
+```cpp
+template <typename Cont,
+          typename = std::void_t<decltype(std::declval<Cont>().begin()),
+                                 decltype(std::declval<Cont>().end())>>
+```
 
+<br/>
 
+* 만약 여기서 사용자가 실수로 템플릿 인자에 컨테이너 말고 인자를 한 개 더 전달한다면 어떻게 될까?
+* 오버로딩 후보군에서 제외되지 않아서 그냥 컴파일 오류가 뜬다.
 
+<br/>
 
+* 만약에 위 ```print``` 함수가 표준 라이브러리 함수들 처럼 여러 사용자들을 고려해야 하는 상황이라면
+* 위와 같이 사용자가 실수 했을 때에도 정상적으로 작동할 수 있도록 설계해야 한다.
+* 이를 위해선 타입 체크하는 부분을 다른 곳으로 빼야 한다.
+
+```cpp
+template <typename Cont>
+std::void_t<decltype(std::declval<Cont>().begin()),
+            decltype(std::declval<Cont>().end())>
+print(const Cont& container)
+```
+
+> 어렵다 다시 복습하자
 
 ```
 
@@ -310,10 +336,6 @@ using void_t = void;
 
 [type_traits](https://en.cppreference.com/w/cpp/header/type_traits)
 [static_assert](https://en.cppreference.com/w/cpp/language/static_assert)
-[is_class](https://en.cppreference.com/w/cpp/types/is_class)
-[is_integral](https://en.cppreference.com/w/cpp/types/integral_constant)
-[std::false_type](https://en.cppreference.com/w/cpp/types/integral_constant)
-[enable_if](https://en.cppreference.com/w/cpp/types/enable_if)
 
 <br/>
 
