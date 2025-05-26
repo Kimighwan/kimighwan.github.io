@@ -313,7 +313,7 @@ auto [a, b, c] = arr;
 
 ```cpp
 std::map<int, std::string> m = {{3, "hi"}, {5, "hello"}};
-for (auto& [key, val] : m) { std::cout << "Key : " << key << " value : " << val << std::endl; } }
+for (auto& [key, val] : m) { std::cout << "Key : " << key << " value : " << val << std::endl; }
 ```
 
 3. data members
