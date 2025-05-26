@@ -51,7 +51,6 @@ std::pair<std::string, bool> GetValueFromMap(
 
   return std::make_pair(std::string(), false);
 }
-
 int main() {
   std::map<int, std::string> data = {{1, "hi"}, {2, "hello"}, {3, "hiroo"}};
   std::cout << "맵에서 2 에 대응되는 값은? " << GetValueFromMap(data, 2).first
