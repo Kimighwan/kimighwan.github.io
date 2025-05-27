@@ -42,10 +42,11 @@ int main() {
 - 아래와 같이 대응되는 값 말고 실제로 있는지 없는지 체크를 하는 값까지 같이 반환을 해서 해결할 수 있다.
 
 ```cpp
-std::pair<std::string, bool> GetValueFromMap(
-  const std::map<int, std::string>& m, int key) {
+std::pair<std::string, bool> GetValueFromMap(const std::map<int, std::string>& m, int key) 
+{
   auto itr = m.find(key);
-  if (itr != m.end()) {
+  if (itr != m.end()) 
+  {
     return std::make_pair(itr->second, true);
   }
 
