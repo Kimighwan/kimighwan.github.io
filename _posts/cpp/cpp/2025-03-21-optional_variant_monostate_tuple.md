@@ -30,7 +30,7 @@ std::string GetValueFromMap(const std::map<int, std::string>& m, int key) {
 }
 
 int main() {
-	std::map<int, std::string> data = { {1, "hi"}, {2, "hello"}, {3, "hiroo"} };
+	std::map<int, std::string> data = {%{1, "hi"}, {2, "hello"}, {3, "hiroo"}%};
 	std::cout << "맵에서 2 에 대응되는 값은? " << GetValueFromMap(data, 2)
 		<< std::endl;
 	std::cout << "맵에서 4 에 대응되는 값은? " << GetValueFromMap(data, 4)
