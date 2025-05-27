@@ -88,7 +88,7 @@ std::optional<std::string> GetValueFromMap(const std::map<int, std::string>& m, 
 }
 
 int main() {
-  std::map<int, std::string> data = {{1, "hi"}, {2, "hello"}, {3, "hiroo"}};
+  std::map<int, std::string> data = {% raw %}{{1, "hi"}, {2, "hello"}, {3, "hiroo"}}{% endraw %};
   std::cout << "맵에서 2 에 대응되는 값은? " << GetValueFromMap(data, 2).value()
             << std::endl;
   std::cout << "맵에 4 는 존재하나요 " << std::boolalpha
@@ -312,7 +312,7 @@ auto [a, b, c] = arr;
 - ```tuple``` 같은 타입 표현식이 ```std::tuple_size<E>::value``` 처럼 생긴 친구들은 말한다.
 
 ```cpp
-std::map<int, std::string> m = {{3, "hi"}, {5, "hello"}};
+std::map<int, std::string> m = {% raw %}{{3, "hi"}, {5, "hello"}}{% endraw %};
 for (auto& [key, val] : m) { std::cout << "Key : " << key << " value : " << val << std::endl; }
 ```
 
