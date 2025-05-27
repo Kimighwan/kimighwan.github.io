@@ -32,7 +32,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Effective C++" %}
+                    {% if category[0] == "EffectiveCpp" %}
                         <li><a href="/categories/effectiveCpp" class="">Effective C++ ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
