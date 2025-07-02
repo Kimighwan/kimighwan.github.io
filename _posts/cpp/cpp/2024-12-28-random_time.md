@@ -117,8 +117,6 @@ int main() {
 ```std::uniform_int_distribution<int> dis(0, 99);```
 * 생성자로 범위를 지정하며 객체를 생성.
 * 그 후 분포 객체에 엔진을 인자로 전달한다.
-  
-<br/>
 
 2. 정규 분포
 ``` std::normal_distribution<double> dist(0, 1);```
