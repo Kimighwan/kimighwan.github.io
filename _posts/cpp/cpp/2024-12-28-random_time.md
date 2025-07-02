@@ -8,7 +8,7 @@ toc: false
 toc_sticky: false
 
 date: 2024-12-28
-last_modified_at: 2024-12-28
+last_modified_at: 2025-07-02
 ---
 
 [모두의 코드](https://modoocode.com/135) 내용을 공부하고 정리한 내용입니다.
@@ -16,9 +16,7 @@ last_modified_at: 2024-12-28
 
 <br/>
 
----
-
-# random
+## random
 
 * c언어의 난수는 내가 보통 생각하던 완전한 무작위 난수가 아닌 의사 난수이다.
     * 기초값으로 이미 정해진 과정에 따라 그냥 만들어진다.
@@ -79,20 +77,14 @@ int main() {
 * 현재 상태를 저장하기 위한 메모리 사용량이 가장 적다.
     * 생성된 난수(정수) 또는 아직 생성안되어 초기 시드값을 담은 정수 2가지.
 * 간단하지만 가장 빠르거나 높은 풀질을 가지는 것은 아니다.
- 
-<br/>
 
 2. mersenne_twister_engine(C++11)
 * 소프트웨어 기반 난수 생성기 중에서 가장 품질이 좋고 속도가 빠른 엔진이다.
 * Mersenne Twister 알고리즘 기반반
 * 하지만 암호학적으로 안전하지 않은 부호 없는 정수 난수를 간격에 생성한다.
- 
-<br/>
   
 3. subtract_with_carry_engine(C++11)
 * carry를 이용한 뺴기 알고리즘을 사용한다
- 
-<br/>
 
 4. philox_engine(C++26)
 * 카운터 기반 난수 엔진.
@@ -134,9 +126,7 @@ int main() {
    
 <br/>
    
----
-   
-# chrono
+## chrono
 
 * chrono는 크게 3가지로 구성됨
   * 현재 시간을 알려주는 시계
@@ -193,6 +183,7 @@ std::chrono::time_point<std::chrono::high_resolution_clock> end =  std::chrono::
 * clock에는 현재의 time_point를 리턴하는 static 함수 now()가 정의되어 있다.
     * clock에 맞는 time point를 리턴한다.
       * 위 예시는 ```std::chrono::time_point<std::chrono::high_resolution_clock>```를 리턴한다.
+
 <br/>
 
 ## time_point
@@ -209,14 +200,13 @@ std::chrono::time_point<std::chrono::high_resolution_clock> end =  std::chrono::
 <br/>
 
 * duration 객체를 받아서 원하는 duration으로 캐스팅 가능하다.
-
 ```ch::duration_cast<std::chrono::microseconds>(diff).count()```
 
-* ```std::chrono::microseconds```는 미리 정의된 duration 객체.
-  * count값은 duration이 몇 마이크로초 인가를 나타낸다.
-    * 이외에 nanoseconds, milliseconds, seconds, minutes, hours도 있다
+- ```std::chrono::microseconds```는 미리 정의된 duration 객체.
+  - count값은 duration이 몇 마이크로초 인가를 나타낸다.
+    - 이외에 nanoseconds, milliseconds, seconds, minutes, hours도 있다
  
- <br/>
+<br/>
  
 ## 현재 시간
 
@@ -274,7 +264,6 @@ int main() {
 ---
 
 [random](https://en.cppreference.com/w/cpp/header/random)
-
 [ctime](https://en.cppreference.com/w/cpp/header/ctime)
 
 <br/>
